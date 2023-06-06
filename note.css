@@ -1,3 +1,39 @@
-input{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+input {
     display: block;
+    padding: 0.75rem 0.75rem;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+input[type=submit]:hover {
+    background-color: #0081ea;
+  }
+
+input[type=submit] {
+    background-color: #0c66b4;
+    color: white;
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
