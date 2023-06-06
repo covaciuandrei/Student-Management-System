@@ -53,9 +53,9 @@ a:hover{
     color: #0081ea;
 }
 
-.logout{
+/* .logout{
     display: none;
-}
+} */
 
 table{
     border: 20px solid blue;
@@ -98,3 +98,13 @@ th,td{
     border-radius: 8px;
 }
 
+.logout{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.logout:hover{
+    color: #0081ea;
+}
