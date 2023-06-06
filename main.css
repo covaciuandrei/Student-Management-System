@@ -57,14 +57,7 @@ a:hover{
     display: none;
 } */
 
-table{
-    border: 2px solid blue;
 
-    width: 100%;
-}
-th,td{
-    border: 1px solid green;
-}
 
 .cautare{
     height: 10rem;
@@ -108,3 +101,29 @@ th,td{
 .logout:hover{
     color: #0081ea;
 }
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+  
+  #tabel_studenti tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #tabel_studenti th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0c66b4;
+    color: white;
+  }
