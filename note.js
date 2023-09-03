@@ -1,7 +1,7 @@
 // const studenti = [
 //   { ID: 1, nume: "Covaciu", prenume: "Andrei", materia: "Bio", nota: 5 },
 // ];
-let studenti = JSON.parse(localStorage.getItem('studenti')) || [];
+let studenti = JSON.parse(localStorage.getItem("studenti")) || [];
 // let elev_nou = {
 //   ID: 2,
 //   nume: "Dancau",
@@ -13,6 +13,13 @@ let studenti = JSON.parse(localStorage.getItem('studenti')) || [];
 
 const table = document.getElementById("tabel_studenti");
 const tbody = document.getElementById("tbody");
+
+const resetForm = () => {
+  const input_fields = document.querySelectorAll(".input");
+  console.log(input_fields);
+  input_fields.forEach(input=>input.value = '');
+  console.log(input_fields);
+};
 
 // studenti.forEach(student =>{
 //     let row = document.createElement("tr");
@@ -48,17 +55,15 @@ const tbody = document.getElementById("tbody");
 //     console.log("a mers");
 // })
 
-const adauga_nota = document.getElementById("adauga");
+// const adauga_nota = document.getElementById("adauga");
 
 // Add an event listener for the button click
-adauga_nota.addEventListener("click", function () {
-  console.log("Button clicked!");
-
-    let id = parseInt(document.getElementById("id_student").value);
-    let nume = document.getElementById("nume_student").value;
-    let prenume = document.getElementById("prenume_student").value;
-    let materia = document.getElementById("materia_student").value;
-    let nota = parseInt(document.getElementById("nota_student").value);
+const submitForm = () => {
+  let id = parseInt(document.getElementById("id_student").value);
+  let nume = document.getElementById("nume_student").value;
+  let prenume = document.getElementById("prenume_student").value;
+  let materia = document.getElementById("materia_student").value;
+  let nota = parseInt(document.getElementById("nota_student").value);
 
   let elev_nou = {
     ID: id,
@@ -69,8 +74,9 @@ adauga_nota.addEventListener("click", function () {
   };
   studenti.push(elev_nou);
   console.log(studenti);
-  localStorage.setItem('studenti', JSON.stringify(studenti));
+  localStorage.setItem("studenti", JSON.stringify(studenti));
+
+  resetForm();
+
   alert("Nota adaugata!");
-});
-
-
+};
