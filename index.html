@@ -1,52 +1,47 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="main.css" />
     <title>Student Management System</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-
-<body>
+  <body>
     <nav class="nav">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="note.html">Grades</a></li>
-            <li><a href="students.html">Students</a></li>
-            
-        </ul>
-  
-        <div class="buttons">
-            <a class="" href="auth/signup.html">Sign Up</a>
-            <a class="" href="auth/login.html">Login</a>
-        </div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="note.html">Grades</a></li>
+        <li><a href="students.html">Students</a></li>
+      </ul>
 
+      <div class="buttons">
+        <a class="" href="auth/signup.html">Sign Up</a>
+        <a class="" href="auth/login.html">Login</a>
+      </div>
     </nav>
     <div class="container">
-        <div class="cautare">
-            <form class="form-cautare" action="index.html">
-                <label class="form-title">Introduceti ID-ul elevului</label>
-                <input type="text" id="search-form" name="search-form" value="">
-                <button class="buton" id="buton">Cauta</button>
-            </form>
-
-        </div>
-        <table id="tabel_studenti">
-            <tr>
-              <th>ID_Student</th>
-              <th>Nume</th>
-              <th>Prenume</th>
-              <th>Materia</th>
-              <th>Nota</th>
-            </tr>
-            <tbody id="tbody"></tbody>
-          </table>
+      <div class="cautare">
+        <form class="form-cautare" action="index.html">
+          <label class="form-title">Introduceti ID-ul elevului</label>
+          <input type="text" id="search-form" name="search-form" value="" />
+          <button class="buton" id="buton">Cauta</button>
+        </form>
+      </div>
+      <table id="tabel_studenti">
+        <tr>
+          <th>ID_Student</th>
+          <th>Nume</th>
+          <th>Prenume</th>
+          <th>Materia</th>
+          <th>Nota</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+      </table>
     </div>
-</body>
+  </body>
 
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </html>

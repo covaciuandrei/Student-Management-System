@@ -1,73 +1,68 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
-
 
 input {
-    display: block;
-    padding: 0.75rem 0.75rem;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-
-input[type=submit]:hover {
-    background-color: #0081ea;
-  }
-
-input[type=submit] {
-    background-color: #0c66b4;
-    color: white;
-    padding: 0.6rem 1rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-
-  .container{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: block;
+  padding: 0.75rem 0.75rem;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-
-
-
-.nav{
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to right,#20022a 0,#0c66b4 100%);
-    font-weight: 700;;
+input[type="submit"]:hover {
+  background-color: #0081ea;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#adauga {
+  background-color: #0c66b4;
+  color: white;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #20022a 0, #0c66b4 100%);
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    padding: 1rem;
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
-a:hover{
-    color: #0081ea;
+a:hover {
+  color: #0081ea;
 }
