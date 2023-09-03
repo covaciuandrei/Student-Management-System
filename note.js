@@ -2,60 +2,13 @@
 //   { ID: 1, nume: "Covaciu", prenume: "Andrei", materia: "Bio", nota: 5 },
 // ];
 let studenti = JSON.parse(localStorage.getItem("studenti")) || [];
-// let elev_nou = {
-//   ID: 2,
-//   nume: "Dancau",
-//   prenume: "Sebi",
-//   materia: "Mate",
-//   nota: 8,
-// };
-// studenti.push(elev_nou);
-
-const table = document.getElementById("tabel_studenti");
-const tbody = document.getElementById("tbody");
 
 const resetForm = () => {
   const input_fields = document.querySelectorAll(".input");
   console.log(input_fields);
-  input_fields.forEach(input=>input.value = '');
+  input_fields.forEach((input) => (input.value = ""));
   console.log(input_fields);
 };
-
-// studenti.forEach(student =>{
-//     let row = document.createElement("tr");
-
-//     let ID = document.createElement("td");
-//     ID.textContent = student.ID;
-//     row.appendChild(ID);
-
-//     let nume = document.createElement("td");
-//     nume.textContent = student.nume;
-//     row.appendChild(nume);
-
-//     let prenume = document.createElement("td");
-//     prenume.textContent = student.prenume;
-//     row.appendChild(prenume);
-
-//     let materia = document.createElement("td");
-//     materia.textContent = student.materia;
-//     row.appendChild(materia);
-
-//     let nota = document.createElement("td");
-//     nota.textContent = student.nota;
-//     row.appendChild(nota);
-
-//     tbody.appendChild(row);
-// })
-// console.log(table);
-
-// console.log(studenti);
-
-// const adauga_nota = document.getElementById("adauga");
-// adauga_nota.addEventListener("click", ()=>{
-//     console.log("a mers");
-// })
-
-// const adauga_nota = document.getElementById("adauga");
 
 // Add an event listener for the button click
 const submitForm = () => {
