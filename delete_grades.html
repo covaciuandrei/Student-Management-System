@@ -1,10 +1,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="students.css" />
-    <title>Studenti</title>
+    <link rel="stylesheet" href="delete_grades.css" />
+    <title>Document</title>
   </head>
   <body>
     <nav class="nav">
@@ -24,16 +23,19 @@
     <div id="container">
       <table id="tabel_studenti">
         <tr>
+          <th></th>
           <th>ID_Student</th>
           <th>Nume</th>
           <th>Prenume</th>
           <th>Materia</th>
           <th>Nota</th>
         </tr>
+
         <tbody id="tbody"></tbody>
       </table>
+      <button id="deleteButton">Delete Selected Rows</button>
     </div>
 
-    <script src="students.js" type="module"></script>
+    <script src="delete_grades.js" type="module"></script>
   </body>
 </html>
